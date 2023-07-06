@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Calculator</title>
+		<link rel="stylesheet" href="calculator.css">
+		<script src="calculate.js"></script>
+	</head>
+	<body>
+		<div id="calculator">
+			<input id="display" type="text">
+			<div id="keys">
+				<button id="AC" class="function" onclick="clear_all()">AC</button>
+				<button id="DEL" class="function" onclick="delete_key()">DEL</button>
+				<button id="%" class="operator" onclick="display('%')">%</button>
+				<button id="/" class="operator" onclick="display('/')">/</button>
+				<br>
+
+				<button id="7" class="number" onclick="display('7')">7</button>
+				<button id="8" class="number" onclick="display('8')">8</button>
+				<button id="9" class="number" onclick="display('9')">9</button>
+				<button id="*" class="operator" onclick="display('*')">*</button>
+				<br>
+
+				<button id="4" class="number" onclick="display('4')">4</button>
+				<button id="5" class="number" onclick="display('5')">5</button>
+				<button id="6" class="number" onclick="display('6')">6</button>
+				<button id="-" class="operator" onclick="display('-')">-</button>
+				<br>
+
+				<button id="1" class="number" onclick="display('1')">1</button>
+				<button id="2" class="number" onclick="display('2')">2</button>
+				<button id="3" class="number" onclick="display('3')">3</button>
+				<button id="+" class="operator" onclick="display('+')">+</button>
+				<br>
+
+				<button id="0" class="number" onclick="display('0')">0</button>
+				<button id="00" class="number" onclick="display('00')">00</button>
+				<button id="." class="number" onclick="display('.')">.</button>
+				<button id="=" class="operator" onclick="calculate()">=</button>
+				<br>
+			</div>
+		</div>
+		<div id="usage">
+			<h2>Calculator usage</h2>
+			<p>
+				AC All clear<br>
+				DEL Delete</br>
+				% Modulus<br>
+				/ Division<br>
+				* Multiplication<br>
+				- Subtraction<br>
+				+ Addition<br>
+				= Calculate
+			</p>
+		</div>
+	</body>
+</html>
